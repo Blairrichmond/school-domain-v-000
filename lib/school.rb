@@ -19,7 +19,7 @@ class School
   def sort
     @roster.sort.to_h do |a, b|
       a <=> b
-      
+
       end
   end
 
