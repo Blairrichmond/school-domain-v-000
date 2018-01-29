@@ -17,10 +17,6 @@ class School
   end
 
   def sort
-    @roster.sort.to_h do |a, b|
-      a <=> b
-
-      end
-  end
+    @roster.map{|a, b| [a, b.sort]}.to_h
 
 end
