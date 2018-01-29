@@ -5,11 +5,11 @@ class School
   end
 
   def roster
-    roster = {}
+    @roster = {}
   end
 
-  def add_student(student, index)
-    roster << student
+  def add_student(student, grade)
+    @roster[grade] << student
   end
 
 end
